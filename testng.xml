@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel Testing Suite">
+<!-- Suite -->
+<test name="Parallel Tests" thread-count="120" parallel="methods">
+<classes>
+<class name="com.yourorganization.maven_sample.LogicPositivizer"/>
+<class name="com.yourorganization.maven_sample.SecondUser"/>
+
+ <class name="com.yourorganization.maven_sample.ThirdUser"/>
+<class name="com.yourorganization.maven_sample.FourthUser"/>
+<class name="com.yourorganization.maven_sample.FifthUser"/>
+
+<!-- <class name="com.yourorganization.maven_sample.SixthUser"/>
+<class name="com.yourorganization.maven_sample.SevenUser"/>
+<class name="com.yourorganization.maven_sample.EightUser"/>
+<class name="com.yourorganization.maven_sample.NineUser"/>
+<class name="com.yourorganization.maven_sample.TenUser"/>
+
+ <class name="com.yourorganization.maven_sample.User11"/>
+<class name="com.yourorganization.maven_sample.User12"/>
+<class name="com.yourorganization.maven_sample.User13"/>
+<class name="com.yourorganization.maven_sample.User14"/>
+<class name="com.yourorganization.maven_sample.User15"/>
+<class name="com.yourorganization.maven_sample.User16"/>
+<class name="com.yourorganization.maven_sample.User17"/>
+<class name="com.yourorganization.maven_sample.User18"/>
+<class name="com.yourorganization.maven_sample.User19"/>
+<class name="com.yourorganization.maven_sample.User20"/>
+
+<class name="com.yourorganization.maven_sample.User21"/>
+<class name="com.yourorganization.maven_sample.User22"/>
+<class name="com.yourorganization.maven_sample.User23"/>
+<class name="com.yourorganization.maven_sample.User24"/>
+<class name="com.yourorganization.maven_sample.User25"/>
+<class name="com.yourorganization.maven_sample.User26"/>
+<class name="com.yourorganization.maven_sample.User27"/>
+<class name="com.yourorganization.maven_sample.User28"/>
+<class name="com.yourorganization.maven_sample.User29"/>
+<class name="com.yourorganization.maven_sample.User30"/>
+
+<class name="com.yourorganization.maven_sample.User31"/>
+<class name="com.yourorganization.maven_sample.User32"/>
+<class name="com.yourorganization.maven_sample.User33"/>
+<class name="com.yourorganization.maven_sample.User34"/>
+<class name="com.yourorganization.maven_sample.User35"/>
+<class name="com.yourorganization.maven_sample.User36"/>
+<class name="com.yourorganization.maven_sample.User37"/>
+<class name="com.yourorganization.maven_sample.User38"/>
+<class name="com.yourorganization.maven_sample.User39"/>
+<class name="com.yourorganization.maven_sample.User40"/>
+
+<class name="com.yourorganization.maven_sample.User41"/>
+<class name="com.yourorganization.maven_sample.User42"/>
+<class name="com.yourorganization.maven_sample.User43"/>
+<class name="com.yourorganization.maven_sample.User44"/>
+<class name="com.yourorganization.maven_sample.User45"/>
+<class name="com.yourorganization.maven_sample.User46"/>
+<class name="com.yourorganization.maven_sample.User47"/>
+<class name="com.yourorganization.maven_sample.User48"/>
+<class name="com.yourorganization.maven_sample.User49"/>
+<class name="com.yourorganization.maven_sample.User50"/>
+
+<class name="com.yourorganization.maven_sample.User51"/>
+<class name="com.yourorganization.maven_sample.User52"/>
+<class name="com.yourorganization.maven_sample.User53"/>
+<class name="com.yourorganization.maven_sample.User54"/>
+<class name="com.yourorganization.maven_sample.User55"/>
+<class name="com.yourorganization.maven_sample.User56"/>
+<class name="com.yourorganization.maven_sample.User57"/>
+<class name="com.yourorganization.maven_sample.User58"/>
+<class name="com.yourorganization.maven_sample.User59"/>
+<class name="com.yourorganization.maven_sample.User60"/>
+
+<class name="com.yourorganization.maven_sample.User61"/>
+<class name="com.yourorganization.maven_sample.User62"/>
+<class name="com.yourorganization.maven_sample.User63"/>
+<class name="com.yourorganization.maven_sample.User64"/>
+<class name="com.yourorganization.maven_sample.User65"/>
+<class name="com.yourorganization.maven_sample.User66"/>
+<class name="com.yourorganization.maven_sample.User67"/>
+<class name="com.yourorganization.maven_sample.User68"/>
+<class name="com.yourorganization.maven_sample.User69"/>
+<class name="com.yourorganization.maven_sample.User70"/>
+
+
+<class name="com.yourorganization.maven_sample.User71"/>
+<class name="com.yourorganization.maven_sample.User72"/>
+<class name="com.yourorganization.maven_sample.User73"/>
+<class name="com.yourorganization.maven_sample.User74"/>
+<class name="com.yourorganization.maven_sample.User75"/>
+<class name="com.yourorganization.maven_sample.User76"/>
+<class name="com.yourorganization.maven_sample.User77"/>
+<class name="com.yourorganization.maven_sample.User78"/>
+<class name="com.yourorganization.maven_sample.User79"/>
+<class name="com.yourorganization.maven_sample.User80"/>
+
+
+<class name="com.yourorganization.maven_sample.User81"/>
+<class name="com.yourorganization.maven_sample.User82"/>
+<class name="com.yourorganization.maven_sample.User83"/>
+<class name="com.yourorganization.maven_sample.User84"/>
+<class name="com.yourorganization.maven_sample.User85"/>
+<class name="com.yourorganization.maven_sample.User86"/>
+<class name="com.yourorganization.maven_sample.User87"/>
+<class name="com.yourorganization.maven_sample.User88"/>
+<class name="com.yourorganization.maven_sample.User89"/>
+<class name="com.yourorganization.maven_sample.User90"/>
+
+
+<class name="com.yourorganization.maven_sample.User91"/>
+<class name="com.yourorganization.maven_sample.User92"/>
+<class name="com.yourorganization.maven_sample.User93"/>
+<class name="com.yourorganization.maven_sample.User94"/>
+<class name="com.yourorganization.maven_sample.User95"/>
+<class name="com.yourorganization.maven_sample.User96"/>
+<class name="com.yourorganization.maven_sample.User97"/>
+<class name="com.yourorganization.maven_sample.User98"/>
+<class name="com.yourorganization.maven_sample.User99"/>
+<class name="com.yourorganization.maven_sample.User100"/>
+
+
+ -->
+
+</classes>
+</test>
+<!-- Test -->
+</suite>					
